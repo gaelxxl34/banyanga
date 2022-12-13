@@ -1,0 +1,95 @@
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+.carousel
+{
+    margin-top: 50px;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    
+}
+@media (max-width: 900px)
+{
+        .carousel
+    {
+        margin-top: 50px;
+        width: 100vw;
+        height: 70vh;
+        position: absolute;
+        
+    }
+        .carousel-button.left
+    {
+        left: 2rem;
+    }
+}
+.carousel > ul
+{
+    
+    list-style: none;
+}
+.slide
+{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    margin-left: 0px;
+}
+.slide > img
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+    
+
+}
+
+.slide[data-active]
+{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0;
+}
+
+.carousel-button
+{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50);
+    color: rgb(33, 226, 240);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus
+{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, .3);
+
+}
+.carousel-button:focus
+{
+    outline: 1px solid black;
+}
+.carousel-button.left
+{
+    left: 3rem;
+}
+.carousel-button.right
+{
+    right: 1rem;
+}

@@ -1,0 +1,53 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", "sans-serif";
+}
+h1
+{
+    margin-top: 35px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 37px;
+    text-align: center;
+}
+p
+{
+    width: 550px;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.container
+{
+    background-image: url(music\ pic.jpg);
+    height: 480px;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+@media (max-width: 800px)
+{
+    .container
+    {
+        background-image: url(music\ pic.jpg);
+        
+        height: 460px;
+        position: relative;
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+}

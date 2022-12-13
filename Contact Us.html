@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="Contact Us.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="D1">
+        <header class="header">
+            <h1><img src="logo.bmp" /></h1>
+
+            <nav id="nav" data-visible="false">
+
+                <ul>
+                    <li><a href="Home.html" >Home</a></li>
+                    <li><a href="Culture.html" >Culture</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Origin.html">Origin</a></li>
+                </ul>
+
+                <button type="button">
+                    <a href="Contact Us.html" id="A1" class="active">Contact Us</a>
+                </button>
+            </nav>
+
+            <button class="hambuger" id="hambuger">
+                <span class="hambuger-bar bar1"></span>
+                <span class="hambuger-bar bar2"></span>
+                <span class="hambuger-bar bar3"></span>
+            </button>
+        </header>
+    </div>
+    <div>
+        <center>
+            <h1>Author Bio</h1>
+        </center>
+
+        <center>
+            <section id="Author">
+                
+                <img class="image" src="photo.jpg" >
+                <p>
+                    <span class="Span">Ongoriko</span> 
+                    <span class="Span">Bindu</span>  
+                    <span class="Span">Gael</span> 
+                is an Undergraduate Computer Science student
+                at International University Of East Africa who created <a href="https://slepp-is-sweet.herokuapp.com/" target="_blank">Sweet Sleep</a>. He is
+                self-taugh, LARAVEL Web-developer and a JAVA junkie.
+                He is also passionate about Artificial Inteligence, Robotic
+                , and Machine learning.
+                He is open to research and collaborations.  
+                </p>
+            </section>
+        </center>
+</div>
+    <div class="Contact-info">
+
+        <div class="card">
+            <i class="icon fas fa-envelope" ></i>
+            <div class="card-content">
+                <h3>Email</h3>
+                <span>gongoriko10@gmail.com</span>
+            </div>
+        </div>
+   
+    
+        <div class="card">
+            <i class="icon fas fa-phone" ></i>
+            <div class="card-content">
+                <h3>Phone Number</h3>
+                <span>+256707269182</span>
+            </div>
+        </div>
+    
+   
+        <div class="card">
+            <i class="icon fas fa-map-marked-alt" ></i>
+            <div class="card-content">
+                <h3>Location</h3>
+                <span>Uganda/Kampala</span>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <div class="Big_c">
+
+        <form action="" method="post" action="{{ route('contact.store') }}">
+
+            <!-- CROSS Site Request Forgery Protection -->
+            
+
+            <h1>Contact Us Here</h1>
+            <input type="text" id="FirstName" placeholder="First Name" name="nme" required>
+            <input type="text" id="LastName" placeholder="last Name" name="nme" required>
+            <input type="email" id="email" placeholder="Email" name="emil" required>
+            <input type="text" id="mobile" placeholder="Mobile" name="phne" required>
+            <input type="text" placeholder="Subject" name="subjct" id="moble" required>
+            <h4>Type Your Message Here....</h4>
+            <textarea name="mesage" required></textarea>
+            <input type="submit" name="sed" value="Submit" id="button">
+
+        </form>
+    </div>
+</body>
+</html>

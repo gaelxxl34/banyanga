@@ -1,0 +1,305 @@
+body
+{
+    background-color: rgb(210, 209, 224);
+}
+/*AUTHOR SERCTION*/
+.image{
+    align-items: center;
+    float: left;
+    margin: 12px;
+    margin-top: 0;
+    width: 105px;
+    height: 120px;
+    border-radius: 50%;
+}
+#Author{
+    background: #08071d;
+    color:  beige;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+    max-width: 600px;
+}
+@media(max-width: 450px)
+{
+    #Author{
+    background: #08071d;
+    color:  beige;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    max-width: 340px;
+    }
+    #Author p{
+    max-width: 300px;
+    font-size: 16px;
+}
+    hr
+    {
+        width: 50px;
+    }
+}
+#Author p{
+    max-width: 530px;
+    font-size: 18px;
+    
+}
+
+h1{
+    color: aliceblue;
+    margin-top: 30px;
+}
+hr{
+    border: 2px solid whitesmoke;
+    width: 650px;
+    
+}
+.Span{
+    font-size: 22px;
+    
+}
+
+
+/*CARDS SECTION BELOW*/
+.Contact-info{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+position: relative;
+flex: 1;
+max-width: 300px;
+height: 140px;
+background-color: #444;
+margin: 20px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.icon{
+    font-size: 35px;
+    color: lightslategray;
+    transition: .5s linear;
+}
+.card:hover .icon{
+    transform: scale(1.3);
+    opacity: 0;
+    color: blue;
+}
+.card-content h3,
+.card-content span{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-size: 16px;
+opacity: 0;
+}
+.card-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color: rgb(249, 249, 249);
+}
+.card-content span{
+    bottom: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.card:hover h3{
+    opacity: 1;
+    top: 32px;
+    transition: .5s linear .5s;
+}
+.card:hover span{
+    opacity: 1;
+    bottom: 39px;
+    transition: .5s linear .5s;
+}
+
+
+
+
+/*the last part with the form*/
+.Big_c
+{
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Big_c form
+{
+    width: 670px;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50 px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: #08071d;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    
+   
+}
+
+.Big_c form h1
+{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 450px;
+    text-align: center;
+    
+   
+}
+.Big_c form input
+{
+    color: rgb(227, 211, 211);
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.Big_c form input::placeholder 
+{
+    color: #ddd;
+}
+.Big_c form #LastName,
+.Big_c form #mobile
+{
+    margin-left: 20px;
+}
+.Big_c form h4
+{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+.Big_c form textarea
+{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+textarea::-webkit-scrollbar
+{
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb
+{
+    background-color: rgba(194, 194, 194, 0.713);
+}
+.Big_c form #button
+{
+    border: none;
+    background: rgb(243, 235, 235);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(23, 62, 237);
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3;
+}
+.Big_c form #button:hover
+{
+    opacity: 0.7;
+}
+@media(max-width: 850px)
+{
+        .Big_c form
+    {
+        width: 405px;
+        height: 490px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 20px 20px 50 px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: #08071d;
+        backdrop-filter: blur(10px);
+        flex-wrap: wrap;
+    }
+    .Big_c form input
+    {
+        color: rgb(227, 211, 211);
+        width: 190px;
+        height: 30px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 10px;
+        background: none;
+        border-bottom: 2px solid #fff;
+    }
+    .Big_c form textarea
+    {
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-weight: 200;
+        font-size: 15px;
+        padding: 10px;
+        outline: none;
+        min-width: 300px;
+        max-width: 450px;
+        min-height: 80px;
+        max-height: 80px;
+    }
+    .Big_c form h4
+    {
+        color: #fff;
+        font-weight: 300;
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+    .Big_c form #button
+    {
+        border: none;
+        background: rgb(243, 235, 235);
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: rgb(23, 62, 237);
+        width: 100px;
+        padding: 0;
+        margin-right: 300px;
+        margin-bottom: 30px;
+        transition: 0.3;
+    }
+    .anchor
+    {
+        color: rgb(234, 241, 12);
+    }
+}
